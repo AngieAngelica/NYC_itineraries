@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-class NYCItin::Scraper
+class NYCItineraries::Scraper
   @@list = []
   
   def self.list
