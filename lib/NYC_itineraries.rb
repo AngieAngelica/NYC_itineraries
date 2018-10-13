@@ -1,6 +1,6 @@
 require "NYC_itineraries/version"
 require_relative '../lib/scraper.rb'
 
-module NYCItineraries
+class NYCItineraries::Itin
   # Your code goes here...
 end
