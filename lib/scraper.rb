@@ -11,3 +11,6 @@ class NYCItin::Scraper
   
   def self.page(url)
     Nokogiri::HTML(open(url))
+  end
+  
+end
