@@ -23,7 +23,10 @@ class NYCItineraries::CLI
     def prompt_for_user
         input = nil
         while input != "exit"
-            puts "        Please select the number of itinerary that you are interested in or type exit:"
+          puts <<-DOC
+        Please select the number of itinerary that you are interested in 
+        or type exit:"
+                  DOC
         input = gets.strip.downcase
           case input
           when "1"
