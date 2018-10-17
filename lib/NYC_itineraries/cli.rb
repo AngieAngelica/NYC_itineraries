@@ -18,13 +18,16 @@ class NYCItineraries::CLI
         4 - NYC for Food and Wine Lovers
 
         DOC
+
+        @itineraries = NYCItineraries::Length.type
     end
 
     def prompt_for_user
         input = nil
         while input != "exit"
           puts <<-DOC
-        Please select the number of itinerary that you are interested in 
+        Type the number of the itinerary you are interested in, 
+        or type list to see your options again, 
         or type exit:"
                   DOC
         input = gets.strip.downcase
@@ -35,6 +38,10 @@ class NYCItineraries::CLI
             puts "More info 2 "
           when "3"
             puts "More info 3"
+          when "list"
+            list_itineraries
+          else 
+            puts "        Please try again:"
           end
         end
     end
