@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "NYC_itineraries"
+require_relative "../lib/NYC_itineraries.rb"
 
 require "irb"
 IRB.start(__FILE__)
