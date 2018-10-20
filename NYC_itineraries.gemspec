@@ -6,12 +6,12 @@ require "NYC_itineraries/version"
 Gem::Specification.new do |spec|
   spec.name          = "NYC_itineraries"
   spec.version       = NYCItineraries::VERSION
-  spec.authors       = ["'Angie Kassab'"]
-  spec.email         = ["'anasab12@gmail.com'"]
+  spec.authors       = ["Angie Kassab"]
+  spec.email         = ["anasab12@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "A gem listing different itineraries for NYC"
+  spec.description   = "A gem listing different itineraries for NYC: one day, two days, three days, or food & wine"
+  spec.homepage      = "www.github.com/angieangelica/NYC_itineraries"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -7,19 +7,7 @@ class NYCItineraries::CLI
     end
 
     def list_itineraries
-        puts "        Welcome to Frommer's Suggested Itineraries in New York City Gem!"
-        puts "        ________________________________________________________________"
-        puts "                                                                        "
-        puts <<-DOC
-        
-        1 - NYC in One Day
-        2 - NYC in Two Days
-        3 - NYC in Three Days
-        4 - NYC for Food and Wine Lovers
-
-        DOC
-
-        @itineraries = NYCItineraries::Length.type
+      @itineraries = NYCItineraries::Length.type
     end
 
     def prompt_for_user
