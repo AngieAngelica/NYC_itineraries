@@ -1,14 +1,7 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "NYC_itineraries"
-
-# You can add fixtures and/or initialization code here to make experimenting
-# with your gem easier. You can also use a different console, if you like.
-
-
-require "pry"
-Pry.start
+require_relative "../lib/NYC_itineraries.rb"
 
 require "irb"
 IRB.start(__FILE__)

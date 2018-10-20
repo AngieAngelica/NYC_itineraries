@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Angie Kassab"]
   spec.email         = ["anasab12@gmail.com"]
 
-  spec.summary       = "A gem listing different itineraries for NYC"
-  spec.description   = "A gem listing different itineraries for NYC: one day, two days, three days, or food & wine"
-  spec.homepage      = "www.github.com/angieangelica/NYC_itineraries"
+  spec.summary       = "A gem of New York City itineraries taken from https://www.frommers.com."
+  spec.description   = "Users can select which itinerary they would like to read: a one-day, two-day, three-day or food & wine itinerary."
+  spec.homepage      = "https://github.com/AngieAngelica/NYC_itineraries"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -29,9 +29,12 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["NYC_itineraries"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "pry"
+  spec.add_dependency "nokogiri"
+  spec.add_dependency "require_all"
 end
